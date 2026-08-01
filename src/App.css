@@ -159,3 +159,15 @@ body {
   margin: 0;
   font-size: 13px;
 }
+
+@media (max-width: 600px) {
+  .city-input {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .city-input {
+    font-size: 70px;
+  }
+}

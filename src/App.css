@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ЭКРАН ПОИСКА */
+.search-screen {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.cat-fullscreen {
+  width: 100%;
+  max-width: 750px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+  margin-top: 260px;
+}
+
+.city-input {
+  position: absolute;
+  top: 16%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  text-align: center;
+  font-family: 'Baloo 2', sans-serif;
+  font-weight: 800;
+  font-size: 270px;
+  color: #a89a8c;
+  width: 100%;
+  line-height: 1;
+}
+
+.city-input::placeholder {
+  color: #c9bfb4;
+}
+
+.status-text {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  font-size: 14px;
+  color: #a89a8c;
+  margin: 0;
+}
+
+.status-text.error {
+  color: #d18a8a;
+}
+
+/* ЭКРАН РЕЗУЛЬТАТА */
+.result-screen {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.back-button {
+  align-self: flex-start;
+  border: none;
+  background: transparent;
+  color: #a89a8c;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+.city-title {
+  color: #6b6058;
+  font-weight: 400;
+  font-size: 24px;
+  margin: 10px 0 20px 0;
+}
+
+.widget {
+  width: 100%;
+  max-width: 340px;
+  background-color: #f4f2ef;
+  border-radius: 24px;
+  padding: 20px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.cat-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.cat-widget-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.weather-widget {
+  text-align: center;
+}
+
+.widget-temp {
+  color: #6b6058;
+  font-size: 42px;
+  font-weight: 300;
+  margin: 0 0 16px 0;
+}
+
+.forecast {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.forecast-day {
+  min-width: 70px;
+  padding: 10px 6px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.forecast-date {
+  font-size: 11px;
+  color: #a89a8c;
+  margin: 0 0 4px 0;
+}
+
+.forecast-temp {
+  font-weight: 600;
+  color: #6b6058;
+  margin: 0;
+  font-size: 13px;
+}

@@ -25,7 +25,7 @@ function getWeatherCat(weatherCode, temperature) {
   if (temperature < 18) {
     return catCold;
   }
-  return catWarm; // от 18°C до 25°C
+  return catWarm;
 }
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [weather, setWeather] = useState(null);
-  const [screen, setScreen] = useState('search'); // 'search' | 'result'
+  const [screen, setScreen] = useState('search');
 
   const inputRef = useRef(null);
 
